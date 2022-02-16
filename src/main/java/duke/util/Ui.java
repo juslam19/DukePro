@@ -21,6 +21,7 @@ public class Ui {
     }
 
 
+
     // Welcome and Bye
     public static void showWelcome() {
         System.out.println("Hello there, I'm Duke! Let's chat!");
@@ -37,6 +38,16 @@ public class Ui {
         System.out.println("Here are the tasks in your list: ");
         for (int i = 0; i < list.size(); i++) {
             System.out.println(i + 1 + ". " + list.get(i).toString());
+        }
+    }
+
+    // Filter
+    public static void filter(TaskList list, String substring) {
+        System.out.println("Here's what I found: ");
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getDetail().contains(substring)) {
+                System.out.println(i + 1 + ". " + list.get(i).toString());
+            }
         }
     }
 

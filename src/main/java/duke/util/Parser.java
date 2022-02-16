@@ -33,6 +33,11 @@ public class Parser {
                     return new DeleteCommand(index);
                 }
 
+            // Search
+            } else if (category.equals("find")) {
+                String substring = words[1];
+                return new SearchCommand(substring);
+
 
             //Adding tasks
             } else {

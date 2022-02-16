@@ -2,6 +2,9 @@ package duke.command;
 import duke.task.*;
 import duke.util.*;
 
+/*
+ * Class which executes actions for "add" command
+ */
 public class AddCommand extends Command {
 
     protected String type;

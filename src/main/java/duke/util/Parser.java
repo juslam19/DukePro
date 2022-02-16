@@ -2,8 +2,14 @@ package duke.util;
 
 import duke.command.*;
 
+/*
+* Class exists to parse through the input
+*/
 public class Parser {
 
+    /*
+    * Method parses through the input to determine the command
+    */
     public static Command parse(String input) throws DukeException {
 
         // Listing command

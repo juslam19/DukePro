@@ -2,6 +2,9 @@ package duke.command;
 import duke.task.*;
 import duke.util.*;
 
+/*
+* Class which executes actions for "find" command
+*/
 public class SearchCommand extends Command {
 
     protected String substring;

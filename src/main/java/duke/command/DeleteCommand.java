@@ -2,6 +2,9 @@ package duke.command;
 import duke.task.*;
 import duke.util.*;
 
+/*
+ * Class which executes actions for "delete" command
+ */
 public class DeleteCommand extends Command {
 
     protected int index;

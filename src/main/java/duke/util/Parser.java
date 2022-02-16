@@ -38,7 +38,7 @@ public class Parser {
             } else {
 
                 // Throw Exception for missing details
-                if (words.length == 1 && category.equals("todo") || category.equals("deadline") || category.equals("event")) {
+                if (words.length == 1 && (category.equals("todo") || category.equals("deadline") || category.equals("event"))) {
                     throw new DukeException("Description cannot be empty.");
                 }
 

@@ -1,3 +1,5 @@
+package duke;
+
 import duke.command.Command;
 import duke.command.DukeException;
 import duke.command.ExitCommand;
@@ -39,6 +41,7 @@ public class Duke {
                 ui.printException(e);
             }
         }
+        ui.bye();
     }
 
     public static void main(String[] args) throws DukeException {

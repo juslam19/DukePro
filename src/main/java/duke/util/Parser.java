@@ -2,8 +2,23 @@ package duke.util;
 
 import duke.command.*;
 
+/**
+ * Has only one method, which:
+ * Parses the inputted commands to determine which subclass of
+ * command to use, then further parsed to get the parameters to be
+ * passed into the constructors of those subclasses of commands,
+ * which is then returned to effectively have a thing storing the
+ * intended command with the intended parameters.
+ */
 public class Parser {
 
+    /**
+     * Returns an instance of a subclass of Command with parameters filled.
+     *
+     * @param input string that is inputted by user to be parsed
+     * @return Command a subclass of Command passed as a Command
+     * @throws DukeException missing details, or invalid inputs
+     */
     public static Command parse(String input) throws DukeException {
 
         // Listing command

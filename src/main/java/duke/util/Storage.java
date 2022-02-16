@@ -5,14 +5,26 @@ import duke.task.*;
 import java.io.*;
 import java.util.*;
 
+/**
+ * Handles loading and saving of tasks into and from the
+ * TaskList from a specified filepath in the hard drive.
+ */
 public class Storage {
 
     protected String filepath;
 
+    /**
+     * Constructor
+     *
+     * @param filepath string for storage file location.
+     */
     public Storage(String filepath) {
         this.filepath = filepath;
     }
 
+    /**
+     * Tries to create new file at filepath location
+     */
     public void createFile() {
         try {
             File file = new File(filepath);
@@ -24,6 +36,12 @@ public class Storage {
         }
     }
 
+    /**
+     * Tries to save tasklist tasks into chosen file
+     * at filepath in form strings in a txt file.
+     *
+     * @param list the list to be saved into the file.
+     */
     public void save(TaskList list) {
         try {
             FileWriter writer = new FileWriter(filepath);
@@ -37,7 +55,12 @@ public class Storage {
         }
     }
 
-
+    /**
+     * Tries to load from the file at filepath the tasks
+     * to populate tasklist with previously saved tasks.
+     *
+     * @param list the list to be populated with previously saved tasks.
+     */
     public void load(TaskList list) {
         try {
             File file = new File(filepath);

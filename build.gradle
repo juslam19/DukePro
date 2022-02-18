@@ -11,6 +11,8 @@ javafx {
     modules = [ 'javafx.controls' ]
 }
 
+
+
 repositories {
     mavenCentral()
 }
@@ -51,7 +53,7 @@ test {
 }
 
 application {
-    mainClassName = "seedu.duke.Duke"
+    mainClassName = "duke.Launcher"
 }
 
 shadowJar {
@@ -66,3 +68,5 @@ checkstyle {
 run{
     standardInput = System.in
 }
+
+

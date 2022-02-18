@@ -59,7 +59,7 @@ public class Parser {
 
                 // Throw Exception for missing details
                 if (words.length == 1 && (category.equals("todo") || category.equals("deadline") || category.equals("event"))) {
-                    throw new DukeException("Description cannot be empty.");
+                    throw new DukeException("Sorry, the task description can't be empty. Try again.");
                 }
 
 
@@ -78,7 +78,7 @@ public class Parser {
 
                 // Invalid command
                 } else {
-                    throw new DukeException("Invalid command. Follow proper format.");
+                    throw new DukeException("I'm not sure I understand. Try again with proper format for commands.");
                 }
             }
         }

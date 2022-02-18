@@ -81,7 +81,7 @@ public class Ui {
      * @param e DukeException which was thrown and caught.
      */
     public String printException(DukeException e) {
-        return "ERROR: " + e.getMessage();
+        return e.getMessage();
     }
 
 

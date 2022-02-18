@@ -1,5 +1,6 @@
-# User Guide
-## DukePro, the bro
+
+# DukePro, the bro
+## User Guide
 ## Features 
 
 ### Add Tasks

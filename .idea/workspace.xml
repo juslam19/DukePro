@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b978ebb-2a12-45cb-986b-2f4381fa78b2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/duke.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/duke.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/duke/DialogBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/duke/DialogBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/duke/Duke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/duke/Duke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/duke/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/duke/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/duke/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/duke/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/duke/util/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/duke/util/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/DialogBox.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/DialogBox.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/MainWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

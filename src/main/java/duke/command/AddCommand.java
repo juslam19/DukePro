@@ -21,24 +21,24 @@ public class AddCommand extends Command {
      * Determines task's type, then creates a new instance of class
      * task type, subclass of task, before adding to tasklist.
      * Then displays add notification to user using Ui.
-     *
-     * @param tasklist list of tasks.
+     *  @param tasklist list of tasks.
      * @param ui this instance of ui (which has open scanner).
      * @param storage instance of storage with chosen filepath.
+     * @return String to be displayed in response
      */
-    public void execute(TaskList tasklist, Ui ui, Storage storage) {
+    public String execute(TaskList tasklist, Ui ui, Storage storage) {
         if (type.equals("T")) {
             ToDo item = new ToDo(details);
             tasklist.add(item);
-            Ui.add(item, tasklist.size());
+            return Ui.add(item, tasklist.size());
         } else if (type.equals("D")) {
-            Deadline item = new Deadline(details, type);
+            Deadline item = new Deadline(details, time);
             tasklist.add(item);
-            Ui.add(item, tasklist.size());
-        } else if (type.equals("E")) {
-            Event item = new Event(details, type);
+            return Ui.add(item, tasklist.size());
+        } else {
+            Event item = new Event(details, time);
             tasklist.add(item);
-            Ui.add(item, tasklist.size());
+            return Ui.add(item, tasklist.size());
         }
     }
 }

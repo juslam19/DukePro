@@ -13,7 +13,7 @@ public class SearchCommand extends Command {
         this.substring = substring;
     }
 
-    public void execute(TaskList tasklist, Ui ui, Storage storage) {
-        Ui.filter(tasklist, substring);
+    public String execute(TaskList tasklist, Ui ui, Storage storage) {
+        return Ui.filter(tasklist, substring);
     }
 }

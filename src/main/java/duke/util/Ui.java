@@ -10,25 +10,25 @@ import duke.task.TaskList;
  */
 public class Ui {
 
-    FastIO sc;
-
-    /**
-     * Constructor
-     */
-    public Ui() {
-        this.sc = new FastIO();
-    }
-
-
-    /**
-     * Returns command that was typed in by user.
-     *
-     * @return String command that was read from input.
-     */
-    public String readCommand() {
-        String command = sc.nextLine();
-        return command;
-    }
+//    FastIO sc;
+//
+//    /**
+//     * Constructor
+//     */
+//    public Ui() {
+//        this.sc = new FastIO();
+//    }
+//
+//
+//    /**
+//     * Returns command that was typed in by user.
+//     *
+//     * @return String command that was read from input.
+//     */
+//    public String readCommand() {
+//        String command = sc.nextLine();
+//        return command;
+//    }
 
 
 
@@ -36,16 +36,15 @@ public class Ui {
     /**
      * Displays welcome message to user.
      */
-    public static void showWelcome() {
-        System.out.println("Hello there, I'm Duke! Let's chat!");
+    public static String showWelcome() {
+        return "Hello there, I'm Duke! Let's chat!";
     }
 
     /**
      * Displays bye message to user, and closes scanner.
      */
-    public void bye() {
-        System.out.println("Bye! It was nice having you!");
-        sc.close();
+    public static String bye() {
+        return "Bye! It was nice having you!";
     }
 
 
@@ -55,21 +54,23 @@ public class Ui {
      *
      * @param list TaskList containing inputted/previously inputted tasks.
      */
-    public static void list(TaskList list) {
-        System.out.println("Here are the tasks in your list: ");
+    public static String list(TaskList list) {
+        String str = "Here are the tasks in your list: \n";
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(i + 1 + ". " + list.get(i).toString());
+            str = str.concat(i + 1 + ". " + list.get(i).toString() + "\n");
         }
+        return str;
     }
 
     // Filter
-    public static void filter(TaskList list, String substring) {
-        System.out.println("Here's what I found: ");
+    public static String filter(TaskList list, String substring) {
+        String str = "Here's what I found: \n";
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getDetail().contains(substring)) {
-                System.out.println(i + 1 + ". " + list.get(i).toString());
+                str.concat(i + 1 + ". " + list.get(i).toString() + "\n");
             }
         }
+        return str;
     }
 
 
@@ -79,8 +80,8 @@ public class Ui {
      *
      * @param e DukeException which was thrown and caught.
      */
-    public void printException(DukeException e) {
-        System.out.println("ERROR: " + e.getMessage());
+    public String printException(DukeException e) {
+        return "ERROR: " + e.getMessage();
     }
 
 
@@ -88,22 +89,22 @@ public class Ui {
     /**
      * Displays mark message, and shows task marked to user.
      */
-    public static void mark(Task task) {
-        System.out.println("Nice! I've marked this task as done: \n" + task.toString());
+    public static String mark(Task task) {
+        return "Nice! I've marked this task as done: \n" + task.toString();
     }
 
     /**
      * Displays unmark message, and shows task unmarked to user.
      */
-    public static void unmark(Task task) {
-        System.out.println("OK, I've marked this task as not done yet: \n" + task.toString());
+    public static String unmark(Task task) {
+        return "OK, I've marked this task as not done yet: \n" + task.toString();
     }
     
     /**
      * Displays delete message, and shows task deleted to user.
      */
-    public static void delete(Task task, int size) {
-        System.out.println("Noted. I've removed this task: \n" + task.toString() + "\nNow you have " + size + " tasks in the list.");
+    public static String delete(Task task, int size) {
+        return "Noted. I've removed this task: \n" + task.toString() + "\nNow you have " + size + " tasks in the list.";
     }
 
 
@@ -111,8 +112,8 @@ public class Ui {
     /**
      * Displays add message, and shows task added to user.
      */
-    public static void add(Task task, int size) {
-        System.out.println("Got it. I've added this task: \n" + task.toString() + "\nNow you have " + size + " tasks in the list.");
+    public static String add(Task task, int size) {
+        return "Got it. I've added this task: \n" + task.toString() + "\nNow you have " + size + " tasks in the list.";
     }
 
 }

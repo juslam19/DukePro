@@ -72,7 +72,8 @@ public class Parser {
                     return new AddCommand("D", details[0], details[1]);
 
                 } else if (category.equals("event")) {
-                    String[] details = words[1].split(" /by ", 0);
+                    String[] details = words[1].split(" /at ", 0);
+                    System.out.println(details[0]);
                     return new AddCommand("E", details[0], details[1]);
 
 

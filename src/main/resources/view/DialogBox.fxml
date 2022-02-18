@@ -2,19 +2,25 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<fx:root alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="400.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root alignment="CENTER" disable="true" maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefHeight="46.0" prefWidth="606.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Label fx:id="dialog" alignment="TOP_RIGHT" prefHeight="77.0" prefWidth="305.0" text="Label" wrapText="true">
+        <Label fx:id="dialog" alignment="TOP_LEFT" maxHeight="Infinity" prefHeight="82.0" prefWidth="518.0" text="Response right here" wrapText="true">
          <font>
-            <Font name="Arial" size="12.0" />
-         </font></Label>
-      <ImageView fx:id="displayPicture" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+            <Font name="Lucida Sans Typewriter Regular" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Circle fx:id="displayPicture" fill="#1f93ff" radius="25.0" stroke="GREEN" strokeType="OUTSIDE" strokeWidth="3" />
     </children>
     <padding>
         <Insets bottom="15.0" left="5.0" right="5.0" top="15.0" />
     </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </fx:root>

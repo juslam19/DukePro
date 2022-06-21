@@ -1,3 +1,5 @@
+This is the Individual Project for CS2103T Software Engineering.
+
 # DukePro, the bro
 
 > “Your mind is for having ideas, not holding them.” – David Allen ([source](https://dansilvestre.com/productivity-quotes/))
